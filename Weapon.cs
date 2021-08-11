@@ -48,36 +48,30 @@ namespace WeaponTester
                     {
                         sumDamage += 20;
                     }
-                    sumDamage += 4;
+                    sumDamage += 5;
                     break;
                 case 11:
                     if (sumDamage >= 3)
                     {
                         sumDamage += 2;
                     }
-                    sumDamage += 3;
-                    break;
-                case 12:
+                    sumDamage += 4;
                     break;
                 case 13:
-                    sumDamage += 3;
+                    sumDamage += 4;
                     break;
                 case 14:
-                    sumDamage += 1;
+                    sumDamage += 2;
                     break;
                 case 15:
-                    if (sumDamage >= 3)
-                    {
-                        sumDamage += 1;
-                    }
-                    sumDamage += 3;
+                    sumDamage += 4;
                     break;
                 case 16:
                     if (sumDamage >= 3)
                     {
                         sumDamage += 1;
                     }
-                    sumDamage += 2;
+                    sumDamage += 3;
                     break;
                 case 17:
                     if (sumDamage >= 3)
@@ -97,7 +91,7 @@ namespace WeaponTester
                     {
                         sumDamage += 1;
                     }
-                    sumDamage += 1;
+                    sumDamage += 2;
                     break;
                 case 20:
                     sumDamage += 1;
@@ -163,7 +157,7 @@ namespace WeaponTester
             {
                 skillBonus += 6;
             }
-            if (auto)
+            if (auto && dist >= 12)
             {
                 skillBonus -= 6;
             }
@@ -171,7 +165,8 @@ namespace WeaponTester
             skill += accuracy;
             maxPenetration += mpBonus;
             double averageDamage = 0;
-            for (int i = 0; i < 500000; i++)
+            int countRoll = 5000000;
+            for (int i = 0; i < countRoll; i++)
             {
                 int succ = 0;
                 int res = random.Next(20) + 1;
@@ -223,7 +218,7 @@ namespace WeaponTester
                     }
                 }
             }
-            averageDamage /= 500000;
+            averageDamage /= countRoll;
             return averageDamage;
         }
     }

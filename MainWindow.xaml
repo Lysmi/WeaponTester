@@ -13,7 +13,7 @@
             <ColumnDefinition Width="473*"/>
         </Grid.ColumnDefinitions>
         <Label Content="Дистанция" HorizontalAlignment="Left" Margin="4,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="4,36,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" Name="distInput" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="4,36,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="69" Name="distInput" Grid.ColumnSpan="2" Grid.Column="1"/>
         <Label Content="Меткость" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Grid.Column="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="22,36,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="61" x:Name="accInput" Grid.Column="2"/>
         <Label Content="Раны" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top" Grid.Column="2"/>
@@ -32,7 +32,7 @@
         <Label Content="Навык стрельбы" HorizontalAlignment="Left" Margin="66,90,0,0" VerticalAlignment="Top" Grid.Column="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="83,116,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" x:Name="skillInput" RenderTransformOrigin="0.957,0.435" Grid.Column="2"/>
         <Label Content="Дистанция до врага" HorizontalAlignment="Left" Margin="174,90,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,116,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" x:Name="distToEnemyInput" RenderTransformOrigin="0.957,0.435" Grid.Column="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="199,116,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="69" x:Name="distToEnemyInput" RenderTransformOrigin="0.957,0.435" Grid.Column="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="225,151,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="59" Name="avDamage" Grid.Column="2"/>
     </Grid>
 </Window>
