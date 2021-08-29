@@ -34,7 +34,7 @@ namespace WeaponTester
             weapon.pool = poolInput.IsChecked.Value;
             weapon.power = powerInput.IsChecked.Value;
             weapon.up = upInput.IsChecked.Value;
-            double damage = weapon.Shoot(Int32.Parse(skillInput.Text), Int32.Parse(armorInput.Text), Int32.Parse(distToEnemyInput.Text));
+            double damage = Math.Round(weapon.Shoot(Int32.Parse(skillInput.Text), Int32.Parse(armorInput.Text), Int32.Parse(distToEnemyInput.Text)), 2);
             avDamage.Text = damage.ToString();
         }
     }
